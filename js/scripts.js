@@ -48,9 +48,9 @@ $("form#input").submit(function(event){
       var name = $("#name").val();
       var max = Math.max(csharp,ruby,css);
 
-      console.log("csharp="+csharp);
-      console.log("css="+css);
-      console.log("ruby="+ruby);
+      // console.log("csharp="+csharp);
+      // console.log("css="+css);
+      // console.log("ruby="+ruby);
 
       if(allQuestionsAnswered){
         if (max === ruby) {
@@ -68,7 +68,7 @@ $("form#input").submit(function(event){
           $("span.name").text(name);
           $("span.path").text("C#/.NET");
         }
-        // $("#result").scrollIntoView();
+      
       }
 
 

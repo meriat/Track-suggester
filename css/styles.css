@@ -34,8 +34,17 @@ img{
 .well{
   margin: 40px;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .btn{
   font-size: 20px;
+}
+
+footer{
+  text-align: center;
+  color:#d6feff;
+  margin-top: 70px;
+
 }
