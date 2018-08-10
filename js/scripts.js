@@ -12,14 +12,14 @@ $(document).ready(function(){
 
     var ruby = 0;
     var css = 0;
-    var c# = 0;
+    var csharp = 0;
 
     for(var i=0; i<5; i++)
     {
       answer = array[i];
 
       if(answer === "a"){
-        c# ++;
+        csharp ++;
       }
        else if(answer === "b"){
         ruby ++;
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     }
 
-    var max = Math.max(c#,ruby,css);
+    var max = Math.max(csharp,ruby,css);
 
     if (max === ruby) {
       $("#result").show();
