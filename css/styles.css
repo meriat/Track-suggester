@@ -23,3 +23,12 @@ img{
 #test{
   display: none;
 }
+
+.path{
+  color: green;
+}
+
+.well{
+  margin: 40px;
+  text-align: center;
+}

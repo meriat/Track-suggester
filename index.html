@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Track-Suggester</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
   <script src="js/jquery-3.3.1.js"></script>
@@ -12,7 +12,7 @@
   <body>
     <div class="container">
         <div class="jumbotron">
-      <h1>Welcome to Track Suggester</h1>
+          <h1>Welcome to Track Suggester</h1>
         </div>
       <p>Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p>
       <p>If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.</p>
@@ -20,8 +20,7 @@
       <p class="section1">We can help you to decide on which track you should follow by taking the test below</p>
 
       <form id="input">
-        <label for="name">Your name</label>
-        <input id="name" class="form-control" type="text">
+        Enter your name: <input type="text" id="name"/>
         <button class="btn btn-success" type="submit">Take test</button>
       </form>
 
@@ -32,17 +31,17 @@
         </p>
         <div class="radio">
           <label>
-            <input type="radio" name="q1" value="c" />&nbsp;&nbsp;Front-end
+            <input type="radio" name="q1" value="css" />&nbsp;&nbsp;Front-end
+          </lcsharpbel>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="q1" value="csharp" />&nbsp;&nbsp;Back-end
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q1" value="a" />&nbsp;&nbsp;Back-end
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="q1" value="b" />&nbsp;&nbsp;Both
+            <input type="radio" name="q1" value="ruby" />&nbsp;&nbsp;Both
           </label>
         </div>
       </div>
@@ -53,17 +52,17 @@
         </p>
         <div class="radio">
           <label>
-            <input type="radio" name="q2" value="a" />&nbsp;&nbsp;Big enterprise
+            <input type="radio" name="q2" value="csharp" />&nbsp;&nbsp;Big enterprise
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q2" value="b" />&nbsp;&nbsp;Start-up
+            <input type="radio" name="q2" value="ruby" />&nbsp;&nbsp;Start-up
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q2" value="c" />&nbsp;&nbsp;Doesn't matter
+            <input type="radio" name="q2" value="css" />&nbsp;&nbsp;Doesn't matter
           </label>
         </div>
       </div>
@@ -74,17 +73,17 @@
         </p>
         <div class="radio">
           <label>
-            <input type="radio" name="q3" value="c" />&nbsp;&nbsp;Web applications only
+            <input type="radio" name="q3" value="css" />&nbsp;&nbsp;Web applications only
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q3" value="b" />&nbsp;&nbsp;Other software as well
+            <input type="radio" name="q3" value="ruby" />&nbsp;&nbsp;Other software as well
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q3" value="a" />&nbsp;&nbsp;Both
+            <input type="radio" name="q3" value="csharp" />&nbsp;&nbsp;Both
           </label>
         </div>
       </div>
@@ -95,17 +94,17 @@
         </p>
         <div class="radio">
           <label>
-            <input type="radio" name="q4" value="a" />&nbsp;&nbsp;Yes
+            <input type="radio" name="q4" value="csharp" />&nbsp;&nbsp;Yes
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q4" value="b" />&nbsp;&nbsp;No
+            <input type="radio" name="q4" value="ruby" />&nbsp;&nbsp;No
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q4" value="c" />&nbsp;&nbsp;Maybe
+            <input type="radio" name="q4" value="css" />&nbsp;&nbsp;Maybe
           </label>
         </div>
       </div>
@@ -116,28 +115,30 @@
         </p>
         <div class="radio">
           <label>
-            <input type="radio" name="q5" value="a" />&nbsp;&nbsp;Microsoft
+            <input type="radio" name="q5" value="csharp" />&nbsp;&nbsp;Microsoft
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q5" value="c" />&nbsp;&nbsp;Facebook
+            <input type="radio" name="q5" value="css" />&nbsp;&nbsp;Facebook
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="q5" value="b" />&nbsp;&nbsp;Other
+            <input type="radio" name="q5" value="ruby" />&nbsp;&nbsp;Other
           </label>
         </div>
       </div>
       <button type="submit" class="btn btn-info">Submit</button>
       </form>
 
-    <div class="well">
-      <div id="result">
-      <span class="name">, </span>Our suggestion is for you to follow <span class="path"></span> path.
-      </div>
-    </div>
+          <div class="well" id="result">
+            <h2>hdgfjhsd'</h2>
+          <span class="name"></span>, Our suggestion is for you to follow <span class="path"></span> path.
+          </div>
+
+
+
 
     </div>
   </body>

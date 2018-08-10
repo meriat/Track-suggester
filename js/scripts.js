@@ -14,6 +14,7 @@ $("form#input").submit(function(event){
       var answer5 = $("input:radio[name=q5]:checked").val();
 
        var array = [answer1, answer2, answer3, answer4, answer5];
+       var allQuestionsAnswered = true;
 
       var ruby = 0;
       var css = 0;
@@ -23,40 +24,56 @@ $("form#input").submit(function(event){
       {
         answer = array[i];
 
-        if(answer === "a"){
-          csharp ++;
-        }
-         else if(answer === "b"){
-          ruby ++;
+        if(answer){
+
+          if(answer === "csharp"){
+            csharp ++;
+          }
+           else if(answer === "ruby"){
+            ruby ++;
+          }
+          else{
+            css ++;
+          }
+
         }
         else{
-          css ++;
+          alert("Please answer all the questions so we can give you the best recomendation");
+          allQuestionsAnswered = false;
+          break;
+        }
+        }
+
+
+      var name = $("#name").val();
+      var max = Math.max(csharp,ruby,css);
+
+      console.log("csharp="+csharp);
+      console.log("css="+css);
+      console.log("ruby="+ruby);
+
+      if(allQuestionsAnswered){
+        if (max === ruby) {
+          $("#result").slideDown();
+          $("span.name").text(name);
+          $("span.path").text("Ruby/Rails");
+        }
+        else if (max === css) {
+          $("#result").slideDown();
+          $("span.name").text(name);
+          $("span.path").text("CSS/React");
+        }
+        else {
+          $("#result").slideDown();
+          $("span.name").text(name);
+          $("span.path").text("C#/.NET");
         }
 
       }
 
-      var max = Math.max(csharp,ruby,css);
-
-      if (max === ruby) {
-        $("#result").show();
-        $("span.name").text(name);
-        $("span.path").text("Ruby/Rails");
-      }
-      else if (max === css) {
-        $("#result").show();
-        $("span.name").text(name);
-        $("span.path").text("CSS/React");
-      }
-      else {
-        $("#result").show();
-        $("span.name").text(name);
-        $("span.path").text("C#/.NET");
-      }
 
     });
 });
-
-
 
 
 });
