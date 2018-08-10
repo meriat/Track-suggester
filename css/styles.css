@@ -3,12 +3,15 @@
 }
 body{
 font-family: 'Markazi Text', serif;
-font-size: 20px;
+font-size: 25px;
 margin: 30px;
+background-color: #d6feff;
 }
 
 .jumbotron{
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .section1{
@@ -31,4 +34,8 @@ img{
 .well{
   margin: 40px;
   text-align: center;
+}
+
+.btn{
+  font-size: 20px;
 }

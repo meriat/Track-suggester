@@ -69,7 +69,6 @@ $("form#input").submit(function(event){
           $("span.path").text("C#/.NET");
         }
         // $("#result").scrollIntoView();
-        window.scrollTo(0,document.body.scrollHeight);
       }
 
 
