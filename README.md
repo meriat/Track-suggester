@@ -22,5 +22,7 @@ _This web page asks future students a series of questions which helps them to a 
 * _JavaScript_
 * _jQuery_
 
+## Link to GitHub Pages
+* https://meriat.github.io/Track-suggester
 
 Copyright (c) 2016 **_Meria J Thomas_**
