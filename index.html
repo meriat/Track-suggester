@@ -16,9 +16,14 @@
         </div>
       <p>Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p>
       <p>If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.</p>
-      
+
       <p class="section1">We can help you to decide on which track you should follow by taking the test below</p>
 
+      <form id="input">
+        <label for="name">Your name</label>
+        <input id="name" class="form-control" type="text">
+        <button class="btn btn-success" type="submit">Take test</button>
+      </form>
 
       <form id="test">
       <div class="form-group">
@@ -130,7 +135,7 @@
 
     <div class="well">
       <div id="result">
-        Our suggestion is for you to follow <span class="path"></span> path.
+      <span class="name">, </span>Our suggestion is for you to follow <span class="path"></span> path.
       </div>
     </div>
 

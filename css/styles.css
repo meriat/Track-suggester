@@ -3,7 +3,8 @@
 }
 body{
 font-family: 'Markazi Text', serif;
-font-size: 30px;
+font-size: 20px;
+margin: 30px;
 }
 
 .jumbotron{
@@ -17,4 +18,8 @@ font-size: 30px;
 img{
   height:200px;
   width: auto;
+}
+
+#test{
+  display: none;
 }
